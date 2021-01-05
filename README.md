@@ -1,6 +1,10 @@
-# webpack-starter
-cascaron de mis apps que use para webpack
+Webpack Starter
+Este es el proyecto inicial para crear aplicaciones utilizando webpack.
 
-//falta instalar los modulos ;npm install
+Notas:
+recordar reconstruir los módulos de Node
 
-//falta carpeta dist producto de npm run build
+npm install
+Y para construir el build, recuerden:
+
+npm run build
