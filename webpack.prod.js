@@ -14,8 +14,8 @@ module.exports = {
         minimizer: [new OptimizeCssAssetsPlugin()]
     },
     output: {
-        publicPath: '/',
-        filename: 'main.[hash].js',
+        publicPath: './',
+        filename: './main.[hash].js',
         path: path.resolve(__dirname, 'dist'),
     },
     module: {
@@ -56,7 +56,7 @@ module.exports = {
                         loader: 'file-loader',
                         options: {
                             esModule: false,
-                            name: 'assets/WEBP-Google.png'
+                            name: './assets/WEBP-Google.png'
                         }
                     }
                 ]            
@@ -69,12 +69,12 @@ module.exports = {
             filename: './index.html'
         }),
         new MiniCssExtractPlugin({
-            filename: '[name].[hash].css',
+            filename: './[name].[hash].css',
             ignoreOrder: false
         }),
         new CopyPlugin({
             patterns: [
-                {from: 'src/assets', to: 'assets/'}
+                {from: './src/assets', to: 'assets/'}
             ]
         }),
         new MinifyPlugin(),
